@@ -1,5 +1,6 @@
-
+let choices = ['Rock', 'Paper', 'Scissors'];
+let compPlay = choices[Math.floor(Math.random() * choices.length)];
 function computerPlay() {
-    let play = ['Rock', 'Paper', 'Scissors'];
-    return play[Math.floor(Math.random()*play.length)];
+    console.log(compPlay);
 }
+computerPlay();
