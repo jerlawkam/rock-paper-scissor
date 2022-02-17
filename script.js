@@ -6,6 +6,7 @@ function computerPlay() {
 }
 
 function playRound(userChoice, compChoice) {
+
     switch (true) {
         case userChoice === 'paper' && compChoice === 'paper':
         case userChoice === 'rock' && compChoice === 'rock':
@@ -35,6 +36,18 @@ function playRound(userChoice, compChoice) {
     }
 }
 
-const userChoice = 'scissors';
+const userChoice = 'Scissors';
 const compChoice = computerPlay();
-console.log(playRound(userChoice, compChoice));
+const pR = playRound(userChoice.toLowerCase(), compChoice);
+console.log(pR);
+
+//function game() {
+//    let pR = playRound(userChoice.toLowerCase(), compChoice)
+//    for (let i = 0; i < 5; i++) {
+//        if (pR === `It's a tie.`) {
+//            
+//        } 
+//    }
+//}
+
+//game();
