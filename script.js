@@ -43,11 +43,7 @@ function game() {
         const userChoice = prompt('Rock, Paper or Scissors?');
         const compChoice = computerPlay();
         let pR = playRound(userChoice.toLowerCase(), compChoice);
-        if (pR === 'You win! Paper beats rock!') {
-            pPt++;
-        } else if (pR === 'You win! Rock beats scissors!') {
-            pPt++;
-        } else if (pR === 'You win! Scissors beats paper!') {
+        if (pR === 'You win! Paper beats rock!' || pR === 'You win! Rock beats scissors!' || pR === 'You win! Scissors beats paper!') {
             pPt++;
         } else if (pR === `It's a tie.`) {
             pPt === pPt && cPt === cPt;
