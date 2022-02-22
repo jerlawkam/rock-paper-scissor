@@ -35,10 +35,11 @@ function playRound(userChoice, compChoice) {
     }
 }
 
-        let pPt = 0
-        let cPt = 0
 
 function game() {
+    let pPt = 0
+    let cPt = 0
+
     for (let i = 0; i < 5; i++) {
         const userChoice = prompt('Rock, Paper or Scissors?');
         const compChoice = computerPlay();
@@ -53,6 +54,7 @@ function game() {
         console.log(pR);
         console.log('your score = ' + pPt);
         console.log("Computer's score = " + cPt);
+
     }
 }
 game();
