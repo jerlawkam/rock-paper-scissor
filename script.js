@@ -56,5 +56,13 @@ function game() {
         console.log("Computer's score = " + cPt);
 
     }
+
+    if (pPt > cPt) {
+        console.log('You are the winner!');
+    } else if (cPt > pPt) {
+        console.log('You lose!');
+    } else {
+        console.log("Wah Wah Waahh..it's a tie.");
+    }
 }
 game();
