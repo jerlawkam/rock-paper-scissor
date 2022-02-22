@@ -51,18 +51,15 @@ function game() {
         } else {
             cPt++;
         }
-        console.log(pR);
-        console.log('your score = ' + pPt);
-        console.log("Computer's score = " + cPt);
-
+        return (pR + '  your score = ' + pPt + "  computer's score = " + cPt);
     }
 
     if (pPt > cPt) {
-        console.log('You are the winner!');
+        return ('You are the winner!');
     } else if (cPt > pPt) {
-        console.log('You lose!');
+        return ('You lose!');
     } else {
-        console.log("Wah Wah Waahh..it's a tie.");
+        return ("Wah Wah Waahh..it's a tie.");
     }
 }
 game();
